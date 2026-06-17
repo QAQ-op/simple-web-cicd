@@ -25,7 +25,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: nanfengfenfei/simple-web-cicd:latest   # 改成你的 Docker ID
+          tags: qaq114/simple-web-cicd:latest   # 改成你的 Docker ID
 
       # 4. 部署到云服务器（需替换 secrets）
       - name: Deploy to Server
@@ -35,7 +35,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
-            docker pull nanfengfenfei/simple-web-cicd:latest
+            docker pull qaq114/simple-web-cicd:latest
             docker stop simple-web || true
             docker rm simple-web || true
-            docker run -d -p 80:5000 --name simple-web nanfengfenfei/simple-web-cicd:latest
+            docker run -d -p 80:5000 --name simple-web qaq114/simple-web-cicd:latest
