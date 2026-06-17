@@ -1,6 +1,6 @@
 """
 极简 Flask Web 应用 — CI/CD 实验演示
-yck 2440666137
+lyx 2440666124
 """
 from flask import Flask, render_template_string
 
@@ -42,7 +42,7 @@ HTML = """<!DOCTYPE html>
             <p><span>容器 ID：</span>{{ hostname }}</p>
             <p><span>部署时间：</span>{{ deploy_time }}</p>
             <p><span>环境：</span>{{ environment }}</p>
-	    <p><span>上传人：</span>fallen</p>
+	    <p><span>上传人：</span>2440666124lyx</p>
         </div>
     </div>
 </body>
